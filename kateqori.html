@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="parfume.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="daire"></div>
+    <header id="myNavbar">
+        <nav class="navbar navbar-light bg-transparent myy">
+            <div class="container">
+              <a class="navbar-brand w-25"><img class="w-50" src="logo3.png"></a>
+              <form class="d-flex ss1 w-50">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+              <div class="icons">
+                <i class="bi bi-person-circle"></i>
+                <i id="btnbasket" class="bi bi-cart">(<span>0</span>)</i>
+               </div>
+            </div>
+          </nav>
+          <nav class="navbar navbar-dark navbar-expand-lg bg-primary my">
+            <div class="container-fluid">
+              <button class="mx-3 navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-center py-2" id="mynavbar">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link fs-5" aria-current="page" href="parfume.html">Ana Səhifə</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fs-5" href="about.html">Haqqımızda</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fs-5" href="bloq.html">Bloqlar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fs-5" href="#">Kateqoriyalar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fs-5" href="/NEW SITE 2/parfume.html#elaqe">Əlaqə</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex ss py-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-primary my">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center py-2" id="mynavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="parfume.html">Ana Səhifə</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="about.html">Haqqımızda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="bloq.html">Bloqlar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">Kateqoriyalar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="/NEW SITE 2/parfume.html#elaqe">Əlaqə</a>
+                  </li>
+                </ul>
+                <form class="d-flex ss">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                  </form>
+              </div>
+            </div>
+          </nav> -->
+    </header>
+    <section id="basket">
+        <div class="content1">
+            <div class="modal1">
+                <div class="modal-bas1">
+                    <h2>Basket</h2>
+                    <span><i class="bi bi-x"></i></span>
+                </div>
+                <div class="modal-body1">
+                    <table>
+                        <tbody>
+<!-- <tr>
+<td><img src="etir1.png"></td>
+<td>Calvin Klein</td>
+<td><p class="pt-3"><span class="btn" onclick="azalt()"><i class="bi bi-dash-lg"></i></span>1<span class="btn" onclick="artir()"><i class="bi bi-plus-lg"></i></span></p></td>
+<td><span>300</span> $</td>
+<td onclick="removerow()"><span class="dlt"><i class="bi bi-x"></i></span></td>
+</tr> -->
+                        </tbody>
+                    </table>
+                    <p class="cem">Total: <span id="totalprice"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+         <h1 class="kt py-4"></h1>
+         <div class="kat">
+            <ul>
+                <li class="active">Hamısı</li>
+                <!-- <li >Kişi ətirləri</li>
+                <li >Qadın ətirləri</li>
+                <li >Popular ətirlər</li> -->
+            </ul>
+         </div>
+
+         <section id="sebet">
+             <div class="container">
+                 <div class="row etir">
+                    <!-- <div class="col-md-3 ">
+                        <div class="xana">
+                          <div class="sekil">
+                            <img class="w-100 " src="etir1.png">
+                          </div>
+                          <div class="yazilar">
+                            <h3 class="text-center">Versace</h3>
+                            <div class="d-flex">
+                              <p class="fs-5">345 <span>$</span></p>
+                              <button type="button" class="bg-dark text-light px-3">
+                               Səbətə əlavə et 
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+          
+                      <!-- <div class="col-md-3 ">
+                        <div class="xana">
+                          <div class="sekil">
+                            <img class="w-100 " src="etir9.jpg">
+                          </div>
+                          <div class="yazilar">
+                            <h3 class="text-center">Escada</h3>
+                            <div class="d-flex">
+                              <p class="fs-5">399 <span>$</span></p>
+                              <button type="button" class="bg-dark text-light px-3">
+                               Səbətə əlavə et 
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+          
+                      <!-- <div class="col-md-3 ">
+                        <div class="xana">
+                          <div class="sekil">
+                            <img class="w-100 " src="etir4.jpg">
+                          </div>
+                          <div class="yazilar">
+                            <h3 class="text-center">Poison</h3>
+                            <div class="d-flex">
+                              <p class="fs-5">269<span>$</span></p>
+                              <button type="button" class="bg-dark text-light px-3">
+                               Səbətə əlavə et 
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+          
+                      <!-- <div class="col-md-3 ">
+                        <div class="xana">
+                          <div class="sekil">
+                            <img class="w-100 " src="etir5.jpg">
+                          </div>
+                          <div class="yazilar">
+                            <h3 class="text-center">My Way</h3>
+                            <div class="d-flex">
+                              <p class="fs-5">299<span>$</span></p>
+                              <button type="button" class="bg-dark text-light px-3">
+                               Səbətə əlavə et 
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                 </div>
+             </div>
+             <div class="container">
+                 <div class="row etir">
+
+                 </div>
+             </div>
+             <div class="container">
+                <div class="row etir">
+                    
+                </div>
+            </div>
+         </section>
+      <footer class="py-3 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img class="w-50 rounded" src="logo3.png">
+              <p class="mt-2">20 ilin təcrübəsi ilə xidmətinizdə olmaqdan qürur duyuruq!</p>
+              <p>Həyatınızın ən ətirli səhifəsi...</p>
+            </div>
+            <div class="col-md-3 ">
+              <h3>Kateqoriyalar</h3>
+              <ul>
+                <li>Qadın ətirləri</li>
+                <li>Kişi ətirləri</li>
+                <li>Ekskluziv ətirlər</li>
+                <li>Tester</li>
+                <li>Yeni</li>
+              </ul>
+            </div>
+            <div class="col-md-3 ">
+              <h3>Brendlər</h3>
+              <ul>
+                <li>Versace</li>
+                <li>Calvin Klein</li>
+                <li>Poison</li>
+                <li>Chanel</li>
+                <li>Pure XS</li>
+              </ul>
+            </div>
+            <div class="col-md-3 ">
+              <h3>Məlumat</h3>
+              <p>İş qrafiki:</p>
+              <p>9:00-dan 19:00-dək həftənin altı günü. Bazar günü iş günü deyil.</p>
+            </div>
+          </div>
+          <p class="text-center mt-4">© 2022 <span>«Royal Parfume»</span>. Bütün hüquqlar qorunur.</p>
+        </div>
+      </footer>
+
+    <script src="kateqori.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

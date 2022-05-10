@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.daire{
+    width: 30px;
+    height: 30px;
+    background-color:#FE6B97;
+    opacity: .7;
+    border-radius: 50%;
+    position:fixed;
+    pointer-events: none;
+    transition: .1s;
+    z-index: 50000;
+}
+html{
+    scroll-behavior: smooth!important;
+}
+body{
+    font-family: Poppins, sans-serif!important;
+    /* overflow: hidden!important; */
+}
+header{
+    overflow: hidden!important;
+}
+#myNavbar .my{
+    background-color:#FE6B97!important ;
+}
+#mynavbar li a{
+    color: white!important;
+}
+nav .ss{
+    display: none!important;
+}
+nav .icons i{
+    color: rgba(0, 0, 0,0.7);
+    font-size: 26px;
+    padding: 0 10px;
+}
+nav .icons i:hover{
+    color: #FE6B97;
+    transition: .3s;
+    transform: scale(1.2);
+}
+nav .icons span{
+    color: rgba(0, 0, 0,0.7);
+    font-size: 19px;
+}
+nav ul li a{
+    font-family: 'Karla', sans-serif!important;
+}
+nav ul li a:hover{
+    transition: .2s;
+    border: 1px solid transparent ;
+    background-color: #020eb6;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+#demo img{
+    width: 100%;
+    height: 600px!important;
+    position: relative;
+}
+#demo .sekiller{
+    width: 60%!important;
+    position: absolute;
+    top: 8%!important;
+    left: 0;
+}
+#demo .yazi1{
+    padding-top: 150px!important;
+    margin-left: 490px!important;
+}
+#demo .yazi2{
+    padding-top: 220px!important;
+    margin-left: 270px!important;
+}
+#demo .sekiller h1{
+    font-size: 70px!important;
+    font-weight: 700!important;
+    animation-name: animasiya1;
+    animation-duration: 2s;
+}
+#demo .sekiller h3{
+    font-size: 20px!important;
+    animation-name: animasiya2;
+    animation-duration: 2s;
+}
+#demo .sekiller button{
+    margin-top: 20px!important;
+}
+#demo .sekiller button:hover{
+    background-color: #FE6B97!important;
+    color: white!important;
+    border: none!important;
+    transition: 1s!important;
+}
+@keyframes animasiya1{
+    from{opacity: 0;transform: scale(0);}
+    to{opacity: 1;transform: scale(1);}
+}
+@keyframes animasiya2{
+    from{opacity: 0;transform: scale(2);}
+    to{opacity: 1;transform: scale(1);}
+}
+#about{
+    overflow: hidden!important;
+}
+#about .col-md-6{
+    overflow: hidden!important;
+}
+#about img{
+    transition: 1s;
+}
+#about img:hover{
+    transform: scale(1.3);
+}
+#about a{
+    text-decoration: none;
+    color: #FE6B97;
+    font-size: 20px;
+    font-weight: 650;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #FE6B97;
+}
+#about h2{
+    padding-top: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #020c96;
+}
+#sebet img{
+    height: 250px;
+    transition: 1s;
+}
+#sebet img:hover{
+    transform: scale(1.3);
+}
+#sebet .xana{
+    border: 1px solid silver;
+}
+#sebet .sekil{
+    overflow: hidden;
+    border-bottom: 1px solid silver;
+    padding: 5px;
+}
+#sebet .yazilar{
+    padding: 15px;
+}
+#sebet .yazilar h3{
+    color:black;
+    font-family: 'Courgette', cursive!important;
+}
+#sebet .yazilar p{
+    color: #020c96;
+    padding-top: 10px;
+    font-weight: 550;
+}
+#sebet .yazilar .d-flex{
+    justify-content: space-between;
+    padding-top: 10px;
+}
+#sebet button{
+    background-color: #FE6B97!important;
+    color: white!important;
+    border: none;
+}
+#sebet button:hover{
+    background-color: #fa2162!important;
+    transition: 1s;
+}
+#basket{
+    overflow-y: scroll;
+    width: 40%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left:60%!important;
+    background-color: transparent;
+    z-index: 50000;
+    display: none;
+    }
+    .content1{
+        width: 100%;
+        top:0%;
+        background-color:transparent;
+        z-index: 2000;
+    }
+    .modal1{
+        width: 90%;
+        margin: auto;
+        background-color: white;
+        margin-top: 110px;
+        padding-top: 20px;
+        position: relative;
+        border: 1px solid silver;   
+    }
+    .modal-bas1{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid silver;
+        margin:auto;
+        position: relative;
+    }
+    .modal-bas1 span{
+        font-size: 35px;
+        font-weight: bolder;
+        color: #333;
+        padding-right: 20px;
+    }
+    .modal-bas1 h2{
+        color: #020c96;
+        font-family: Poppins,sans-serif;
+        font-size: 25px;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .modal-body1{
+        width: 100%;
+        height: auto;
+    }
+    .modal-body1 table{
+        width: 95%;
+        margin: 10px auto;
+        text-align: center;
+        border: 1px solid silver;
+    }
+    .modal-body1 table tr td{
+        border: 1px solid silver;
+        font-size: 20px;
+        font-family: Poppins,sans-serif;
+        color: #333;
+    }
+    .modal-body1 table .btn{
+        color: #020c96;
+        font-size: 23px;
+    }
+    .modal-body1 table tr td:nth-child(1){
+        width: 30%;
+    }
+    .modal-body1 table tr td:nth-child(2){
+        width: 30%;
+    }
+    .modal-body1 table tr td:nth-child(3){
+        width: 25%;
+    }
+    .modal-body1 table tr td:nth-child(4){
+        width: 25%;
+    }
+    .modal-body1 table tr td:nth-child(5){
+        width: 5%;
+    }
+    .modal-body1 table tr td img{
+        width: 100%;
+        height:90px;
+    }
+    .modal-body1 table tr .dlt{
+       color: #020c96;
+        font-size: 30px;
+    }
+    .cem{
+        font-family: Poppins,sans-serif;
+        color: #333;
+        font-size: 20px;
+        padding-left: 25px;
+    } 
+    #yeni{
+        background-image: url(bc.jpg);
+        width: 75%;
+        margin: auto;
+        height: 300px;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+
+    }
+    #yeni span{
+        color: #020c96;
+        font-size: 35px;
+        font-weight: 550;
+    }
+    #yeni a{
+        text-decoration: none;
+        color: #FE6B97;
+        font-weight: 600;
+        border-bottom: 3px solid #FE6B97;
+        padding-bottom: 15px;
+    }
+    #elaqe{
+        background-image: url(ba.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    #elaqe h2{
+        color: white;
+        font-size: 45px;
+    }
+    #elaqe i{
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+    }
+    #elaqe i:hover{
+        color: #f5477b;
+        transition: 1s;
+    }
+    footer{
+        background-color: #FE6B97;
+        color: white!important;
+    }
+    footer ul{
+    list-style: none;
+    }
+    footer .row{
+        border-bottom: 2px solid #020c96;
+    }
+    footer span{
+        color: #020c96;
+    }
+/*about 2 ci sayfa*/
+.basliq{
+    background-image: url(ba.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px;
+}
+.about .border-start{
+    padding-left: 20px;
+    border-left: 5px solid #fa2162!important;
+    font-weight: 600;
+}
+#reqemler{
+    background-image: url(b1.jpg);
+    padding: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white!important;
+}#reqemler h4{
+    font-weight: 500!important;
+    font-size: 45px;
+}
+#reqemler p{
+    font-size: 33px;
+}
+ #bloq{
+     background-image: url(ba4.jpg);
+     background-repeat: no-repeat;
+     padding: 126px;
+     background-size: cover;
+     /* background-attachment: fixed; */
+ }
+ #bloq h2{
+    color: #fd5487;
+    font-weight: 600!important;
+    font-size: 55px;
+ }
+ .container-fluid{
+     margin: 0!important;
+     padding: 0!important;
+     overflow: hidden!important;
+ }
+ .container-fluid .row{
+    --bs-gutter-x: 0rem!important;
+ }
+ .container-fluid .col-md-6{
+    overflow: hidden!important;
+    transition: 1s;
+ }
+ .container-fluid .col-md-6 img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+ }
+ .container-fluid .col-md-3{
+    overflow: hidden!important;
+    transition: 1s;
+ }
+ .container-fluid .col-md-3 img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+ }
+ .container-fluid button:hover{
+     background-color: #f5477b!important;
+     transition: 1s;
+     border: none!important;
+     padding: 10px 55px!important;
+     letter-spacing:3px;
+ }
+ .kt{
+     font-size: 45px!important;
+     /* color: #f5477b; */
+     color: #020eb6;
+     text-align: center;
+     font-weight: 550!important;
+ }
+.kat ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 15px 10%;
+    font-size: 20px;
+    text-align: center;
+}
+.kat ul li{
+    border: 1px solid #fa2162;
+    padding: 7px;
+    width: 180px!important;
+    border-radius: 0.5rem;
+    background-color:#FE6B97;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.active{
+    background-color:#020eb6!important;
+    border: 1px solid #020eb6!important;
+
+}
+.elave
+{  
+     width: 100%!important;
+    height: 400px!important;
+    background: url(b4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size:cover;
+}
+.etir .col-md-3{
+    animation-name: animasiya5;
+    animation-duration: 2s;
+}
+@keyframes animasiya5{
+    from{transform: scale(0.2);}
+    to{transform: scale(1);}
+}
+@media(max-width:768px){
+    #mynavbar li a{
+        color: black!important;
+    }
+    .basliq{
+        background: url(ba1.jpg);
+    }
+    #bloq{
+        width: 100%!important;
+        background-size: contain;
+        padding: 90px!important;
+    }
+    #bloq h2{
+        margin-top: -60px!important;
+        margin-left: -25px!important;
+    }
+    .kat ul{
+        flex-wrap: wrap;
+        padding: 15px 5%;
+        font-size: 15px;
+    }
+    .kat ul li{
+        margin-top: 7px;
+        width: 150px!important;
+    }
+    #yeni{
+        width: 95%;
+    }
+    .modal-body1 table tr td{
+        font-size: 15px;
+    }
+    .modal-body1 table .btn{
+        font-size: 15px;
+    }
+    .modal-body1 table tr td:nth-child(1){
+        width:25%;
+    }
+    .modal-body1 table tr td:nth-child(2){
+        width: 30%;
+    }
+    .modal-body1 table tr td:nth-child(3){
+        width: 30%;
+    }
+    .modal-body1 table tr td:nth-child(4){
+        width: 25%;
+    }
+    .modal-body1 table tr td:nth-child(5){
+        width: 5%;
+    }
+    #basket{
+        width: 80%;
+        left: 10%!important;
+    }
+    .modal1{
+        width: 100%!important;
+    }
+    .daire{
+        display: none;
+    }
+    nav .ss1{
+        display: none!important;
+    }
+    nav .ss{
+        display: flex!important;
+    }
+    #demo img{
+        height: 350px!important;
+    }
+    #demo .sekiller{
+        width: 100%!important;
+    }
+    #demo .yazi1{
+        padding-top: 50px!important;
+        margin-left: 10px!important;
+    }
+    #demo .yazi2{
+        padding-top: 50px!important;
+        margin-left: 0px!important;
+    }
+    #demo .sekiller h1{
+        font-size: 40px!important;
+    }
+    #demo .sekiller h3{
+        font-size: 15px!important;
+    }
+    #about .col-md-5{
+        margin-left: 0px!important;
+    }
+}
