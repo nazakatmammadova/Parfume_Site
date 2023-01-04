@@ -54,7 +54,7 @@ document.querySelectorAll(".kat li").forEach(x=>{
             }
             else{
                 item.style.display="none"
-            }
+            } 
         })
         document.querySelectorAll(".c"+x.getAttribute("catid")).forEach(item=>{
             item.style.display="block"
