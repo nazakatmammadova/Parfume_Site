@@ -9,73 +9,73 @@ document.addEventListener('mousemove', function(e){
 const etirler=[
     {
         id:1,
-        img:"etir1.png",
+        img:"./img/etir1.png",
         price:'345',
         name:"Versace"
     },
     {
         id:2,
-        img:"etir9.jpg",
+        img:"./img/etir9.jpg",
         price:"399",
         name:"Escada"
     },
     {
         id:3,
-        img:"etir4.jpg",
+        img:"./img/etir4.jpg",
         price:"269",
         name:"Poison"
     },
     {
         id:4,
-        img:"etir5.jpg",
+        img:"./img/etir5.jpg",
         price:"299",
         name:"My Way"
     },
     {
         id:5,
-        img:"etir2.jpg",
+        img:"./img/etir2.jpg",
         price:"268",
         name:"Daisy"
     },
     {
         id:6,
-        img:"etir3.jpg",
+        img:"./img/etir3.jpg",
         price:"379",
         name:"Pure XS"
     },
     {
         id:7,
-        img:"etir6.jpg",
+        img:"./img/etir6.jpg",
         price:"255",
         name:"Chanel"
     },
     {
         id:8,
-        img:"etir7.jpg",
+        img:"./img/etir7.jpg",
         price:"300",
         name:"Miss Dior"
     },
     {
         id:9,
-        img:"etir8.jpg",
+        img:"./img/etir8.jpg",
         price:"244",
         name:"Bleu Chanel"
     },
     {
         id:10,
-        img:"etir10.jpg",
+        img:"./img/etir10.jpg",
         price:"349",
         name:"Tom Ford"
     },
     {
         id:11,
-        img:"etir12.jpg",
+        img:"./img/etir12.jpg",
         price:"329",
         name:"Mugler"
     },
     {
         id:12,
-        img:"etir11.jpg",
+        img:"./img/etir11.jpg",
         price:"399",
         name:"Calvin Klein"
     }

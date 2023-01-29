@@ -268,7 +268,7 @@ nav ul li a:hover{
         padding-left: 25px;
     } 
     #yeni{
-        background-image: url(bc.jpg);
+        background-image: url(/img/bc.jpg);
         width: 75%;
         margin: auto;
         height: 300px;
@@ -289,7 +289,7 @@ nav ul li a:hover{
         padding-bottom: 15px;
     }
     #elaqe{
-        background-image: url(ba.jpg);
+        background-image: url(/img/ba.jpg);
         background-repeat: no-repeat;
         background-attachment: scroll;
     }
@@ -321,7 +321,7 @@ nav ul li a:hover{
     }
 /*about 2 ci sayfa*/
 .basliq{
-    background-image: url(ba.jpg);
+    background-image: url(/img/ba.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 80px;
@@ -332,7 +332,7 @@ nav ul li a:hover{
     font-weight: 600;
 }
 #reqemler{
-    background-image: url(b1.jpg);
+    background-image: url(/img/b1.jpg);
     padding: 120px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -346,7 +346,7 @@ nav ul li a:hover{
     font-size: 33px;
 }
  #bloq{
-     background-image: url(ba4.jpg);
+     background-image: url(/img/ba4.jpg);
      background-repeat: no-repeat;
      padding: 126px;
      background-size: cover;
@@ -422,7 +422,7 @@ nav ul li a:hover{
 {  
      width: 100%!important;
     height: 400px!important;
-    background: url(b4.jpg);
+    background: url(/img/b4.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center; 
@@ -441,7 +441,7 @@ nav ul li a:hover{
         color: black!important;
     }
     .basliq{
-        background: url(ba1.jpg);
+        background: url(/img/ba1.jpg);
     }
     #bloq{
         width: 100%!important;

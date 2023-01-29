@@ -71,168 +71,168 @@ $(document).ready(function () {
 const etirler=[
     {
         id:1,
-        img:"etir1.png",
+        img:"./img/etir1.png",
         price:'345',
         name:"Versace",
         catid:"famous"
     },
     {
         id:2,
-        img:"etir9.jpg",
+        img:"./img/etir9.jpg",
         price:"399",
         name:"Escada",
         catid:"famous"
     },
     {
         id:3,
-        img:"etir4.jpg",
+        img:"./img/etir4.jpg",
         price:"269",
         name:"Poison",
         catid:"famous"
     },
     {
         id:4,
-        img:"etir5.jpg",
+        img:"./img/etir5.jpg",
         price:"299",
         name:"My Way",
         catid:"famous"
     },
     {
         id:5,
-        img:"etir2.jpg",
+        img:"./img/etir2.jpg",
         price:"268",
         name:"Daisy",
         catid:"woman"
     },
     {
         id:6,
-        img:"etir3.jpg",
+        img:"./img/etir3.jpg",
         price:"379",
         name:"Pure XS",
         catid:"woman"
     },
     {
         id:7,
-        img:"etir6.jpg",
+        img:"./img/etir6.jpg",
         price:"255",
         name:"Chanel",
         catid:"woman"
     },
     {
         id:8,
-        img:"etir7.jpg",
+        img:"./img/etir7.jpg",
         price:"300",
         name:"Miss Dior",
         catid:"woman"
     },
     {
         id:9,
-        img:"etir8.jpg",
+        img:"./img/etir8.jpg",
         price:"244",
         name:"Bleu Chanel",
         catid:"man"
     },
     {
         id:10,
-        img:"etir10.jpg",
+        img:"./img/etir10.jpg",
         price:"349",
         name:"Tom Ford",
         catid:"man"
     },
     {
         id:11,
-        img:"etir12.jpg",
+        img:"./img/etir12.jpg",
         price:"329",
         name:"Mugler",
         catid:"man"
     },
     {
         id:12,
-        img:"etir11.jpg",
+        img:"./img/etir11.jpg",
         price:"399",
         name:"Calvin Klein",
         catid:"man"
     },
     {
         id:13,
-        img:'etir13.jpg',
+        img:'./img/etir13.jpg',
         price:'399',
         name:'Dolce & Gabbana',
         catid:'sirin'
     },
     {
         id:14,
-        img:'etir14.jpg',
+        img:'./img/etir14.jpg',
         price:'276',
         name:'My Burberro',
         catid:'sirin'
     },
     {
         id:15,
-        img:'etir20.png',
+        img:'./img/etir20.png',
         price:'245',
         name:'Valentino',
         catid:'sirin'
     }, 
     {
         id:16,
-        img:'etir21.jpg',
+        img:'./img/etir21.jpg',
         price:'215',
         name:'Narciso',
         catid:'sirin'
     }, 
     {
         id:17,
-        img:'etir15.jpg',
+        img:'./img/etir15.jpg',
         price:'412',
         name:'Encre Noire',
         catid:'tund'
     },
     {
         id:18,
-        img:'etir16.jpg',
+        img:'./img/etir16.jpg',
         price:'288',
         name:'Sauvage Dior',
         catid:'tund'
     },
     {
         id:19,
-        img:'etir19.jpg',
+        img:'./img/etir19.jpg',
         price:'389',
         name:'Goldea',
         catid:'tund'
     },
     {
         id:20,
-        img:'etir22.jpg',
+        img:'./img/etir22.jpg',
         price:'245',
         name:'Signorina',
         catid:'tund'
     },
     {
         id:21,
-        img:'etir17.jpg',
+        img:'./img/etir17.jpg',
         price:'325',
         name:'Dior Homme',
         catid:'cicek'
     },
     {
         id:22,
-        img:'etir18.jpg',
+        img:'./img/etir18.jpg',
         price:'425',
         name:'Majestic Rose',
         catid:'cicek'
     },
     {
         id:23,
-        img:'etir23.jpg',
+        img:'./img/etir23.jpg',
         price:'299',
         name:'Amethyst',
         catid:'cicek'
     }, 
     {
         id:24,
-        img:'etir24.jpg',
+        img:'./img/etir24.jpg',
         price:'379',
         name:'Black Opium',
         catid:'cicek'
