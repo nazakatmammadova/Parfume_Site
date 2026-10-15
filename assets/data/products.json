@@ -1,0 +1,253 @@
+{
+  "categories": [
+    { "id": "popular", "name": "Populyar ətirlər" },
+    { "id": "women", "name": "Qadın ətirləri" },
+    { "id": "men", "name": "Kişi ətirləri" },
+    { "id": "sweet", "name": "Şirin ətirlər" },
+    { "id": "intense", "name": "Tünd ətirlər" },
+    { "id": "floral", "name": "Çiçək ətirləri" }
+  ],
+  "brands": ["Versace", "Calvin Klein", "Chanel", "Dior", "Tom Ford"],
+  "products": [
+    {
+      "id": 1,
+      "name": "Versace",
+      "price": 345,
+      "volume": 90,
+      "category": "popular",
+      "image": "assets/img/products/versace.jpg",
+      "description": "Kristal kimi şəffaf və işıqlı ətir. Təravətli meyvə notları zərif çiçəklərlə birləşərək gün boyu yüngül, qadına xas iz buraxır.",
+      "notes": { "top": ["Yuzu", "Nar", "Buz akkordu"], "heart": ["Pion", "Maqnoliya", "Lotus"], "base": ["Müşk", "Qırmızı ağac", "Ənbər"] }
+    },
+    {
+      "id": 2,
+      "name": "Escada",
+      "price": 399,
+      "volume": 75,
+      "category": "popular",
+      "image": "assets/img/products/escada.jpg",
+      "description": "Şən və enerjili bir ətir. Şirəli armud və çəhrayı istiot ilə başlayır, qızılgül ürəyi ilə yumşalaraq isti müşkə keçir.",
+      "notes": { "top": ["Armud", "Çəhrayı istiot"], "heart": ["Qızılgül", "Bənövşə yarpağı"], "base": ["Müşk", "Ənbər"] }
+    },
+    {
+      "id": 3,
+      "name": "Poison",
+      "price": 269,
+      "volume": 100,
+      "category": "popular",
+      "image": "assets/img/products/poison.jpg",
+      "description": "Cəsarətli və cazibədar. Acı portağalın parlaqlığı Damask qızılgülü və vanil ilə birləşərək unudulmaz, şirin-ədviyyatlı bir iz yaradır.",
+      "notes": { "top": ["Acı portağal", "Limon"], "heart": ["Damask qızılgülü", "Qras qızılgülü"], "base": ["Tonka paxlası", "Vanil", "Badam"] }
+    },
+    {
+      "id": 4,
+      "name": "My Way",
+      "price": 299,
+      "volume": 90,
+      "category": "popular",
+      "image": "assets/img/products/my-way.jpg",
+      "description": "Kəşflərə həsr olunmuş müasir çiçək ətri. Bergamot və portağal çiçəyi ilə açılır, ağ çiçəklər və isti vanillə tamamlanır.",
+      "notes": { "top": ["Berqamot", "Portağal çiçəyi"], "heart": ["Tuberoza", "Jasmin"], "base": ["Vanil", "Ağ müşk", "Sidr"] }
+    },
+    {
+      "id": 5,
+      "name": "Daisy",
+      "price": 268,
+      "volume": 100,
+      "category": "women",
+      "image": "assets/img/products/daisy.jpg",
+      "description": "Gənc, oynaq və təbii. Çiyələk və qreypfrut notları yaz çiçəklərinin zərifliyi ilə birləşir — gündəlik istifadə üçün ideal seçim.",
+      "notes": { "top": ["Çiyələk", "Bənövşə yarpağı", "Qreypfrut"], "heart": ["Qardeniya", "Bənövşə", "Jasmin"], "base": ["Müşk", "Vanil", "Ağ ağaclar"] }
+    },
+    {
+      "id": 6,
+      "name": "Pure XS",
+      "price": 379,
+      "volume": 80,
+      "category": "women",
+      "image": "assets/img/products/pure-xs.jpg",
+      "description": "Şirin və təxribatçı. İlanq-ilanqın ekzotik ətri vanil və isti ədviyyatlarla birləşərək axşamlar üçün güclü bir imza yaradır.",
+      "notes": { "top": ["İlanq-ilanq", "Zəncəfil"], "heart": ["Vanil", "Mirra"], "base": ["Sandal ağacı", "Ənbər"] }
+    },
+    {
+      "id": 7,
+      "name": "Chanel",
+      "price": 255,
+      "volume": 100,
+      "category": "women",
+      "image": "assets/img/products/chanel.jpg",
+      "description": "Klassik zəriflik. Sitrus notlarının təravəti qızılgül və jasminlə davam edir, paçuli və ağ müşklə mükəmməl tamamlanır.",
+      "notes": { "top": ["Portağal", "Berqamot"], "heart": ["Qızılgül", "Jasmin"], "base": ["Paçuli", "Vanil", "Ağ müşk"] }
+    },
+    {
+      "id": 8,
+      "name": "Miss Dior",
+      "price": 300,
+      "volume": 100,
+      "category": "women",
+      "image": "assets/img/products/miss-dior.jpg",
+      "description": "Romantik və incə. Qızılgül və pionun buketi qırmızı portağalın təravəti ilə canlanır, yumşaq müşklə dəri üzərində uzun qalır.",
+      "notes": { "top": ["Qırmızı portağal", "Mandarin"], "heart": ["Qızılgül", "Pion", "İnciçiçəyi"], "base": ["Paçuli", "Müşk"] }
+    },
+    {
+      "id": 9,
+      "name": "Bleu de Chanel",
+      "price": 244,
+      "volume": 100,
+      "category": "men",
+      "image": "assets/img/products/bleu-de-chanel.jpg",
+      "description": "Azad ruhlu kişi üçün ağaclı-aromatik ətir. Sitrus təravəti ədviyyatlarla isinir, sandal ağacı və günnük ilə dərinləşir.",
+      "notes": { "top": ["Qreypfrut", "Limon", "Nanə"], "heart": ["Zəncəfil", "Muskat", "Jasmin"], "base": ["Günnük", "Sandal ağacı", "Sidr"] }
+    },
+    {
+      "id": 10,
+      "name": "Tom Ford",
+      "price": 349,
+      "volume": 50,
+      "category": "men",
+      "image": "assets/img/products/tom-ford.jpg",
+      "description": "Lüks və dərin. Nadir ud ağacı ədviyyatlarla və isti tonka paxlası ilə birləşərək zəngin, uzunömürlü bir iz yaradır.",
+      "notes": { "top": ["Kardamon", "Qara istiot"], "heart": ["Ud", "Qızılgül ağacı"], "base": ["Tonka paxlası", "Vanil", "Ənbər"] }
+    },
+    {
+      "id": 11,
+      "name": "Mugler",
+      "price": 329,
+      "volume": 100,
+      "category": "men",
+      "image": "assets/img/products/mugler.jpg",
+      "description": "Gözlənilməz və cəsur. Lavanda və nanənin təravəti qəhvə və paçuli ilə qarşılaşır, karamel və tonka ilə şirin bir sonluq alır.",
+      "notes": { "top": ["Nanə", "Lavanda", "Berqamot"], "heart": ["Qəhvə", "Paçuli"], "base": ["Tonka paxlası", "Vanil", "Karamel"] }
+    },
+    {
+      "id": 12,
+      "name": "Calvin Klein",
+      "price": 399,
+      "volume": 100,
+      "category": "men",
+      "image": "assets/img/products/calvin-klein.jpg",
+      "description": "Sadə və zamansız. Lavanda və mandarinin təmiz təravəti adaçayı ilə davam edir, sandal ağacı və vetiverlə sakit bir güc qazanır.",
+      "notes": { "top": ["Lavanda", "Mandarin"], "heart": ["Jasmin", "Adaçayı"], "base": ["Sandal ağacı", "Vetiver"] }
+    },
+    {
+      "id": 13,
+      "name": "Dolce & Gabbana",
+      "price": 399,
+      "volume": 75,
+      "category": "sweet",
+      "image": "assets/img/products/dolce-gabbana.jpg",
+      "description": "İsti və işıqlı Aralıq dənizi ruhu. Şaftalı və mandarinin şirinliyi zanbaq və jasminlə birləşir, vanil və ənbərlə yumşalır.",
+      "notes": { "top": ["Mandarin", "Şaftalı"], "heart": ["Zanbaq", "Jasmin"], "base": ["Vanil", "Ənbər"] }
+    },
+    {
+      "id": 14,
+      "name": "My Burberry",
+      "price": 276,
+      "volume": 90,
+      "category": "sweet",
+      "image": "assets/img/products/my-burberry.jpg",
+      "description": "Yağışdan sonra London bağını xatırladan ətir. Ətirli noxud çiçəyi və qızıl armud paçuli və Damask qızılgülü ilə tamamlanır.",
+      "notes": { "top": ["Ətirli noxud", "Berqamot"], "heart": ["Ətirşah", "Heyva", "Qızıl armud"], "base": ["Paçuli", "Damask qızılgülü"] }
+    },
+    {
+      "id": 15,
+      "name": "Valentino",
+      "price": 245,
+      "volume": 100,
+      "category": "sweet",
+      "image": "assets/img/products/valentino.jpg",
+      "description": "Romanın gün batımından ilham alınmış ətir. Ərik və jasminin şirinliyi çəhrayı istiotla canlanır, vanillə isti bir son tapır.",
+      "notes": { "top": ["Berqamot", "Çəhrayı istiot"], "heart": ["Jasmin", "Ərik"], "base": ["Vanil", "Kəşmir ağacı"] }
+    },
+    {
+      "id": 16,
+      "name": "Narciso",
+      "price": 215,
+      "volume": 90,
+      "category": "sweet",
+      "image": "assets/img/products/narciso.jpg",
+      "description": "Müşkün incə cazibəsi. Portağal çiçəyi və osmantusun yumşaq ətri isti ənbər və vanillə dəridə ikinci təbiət kimi hiss olunur.",
+      "notes": { "top": ["Portağal çiçəyi", "Osmantus"], "heart": ["Müşk"], "base": ["Ənbər", "Vanil"] }
+    },
+    {
+      "id": 17,
+      "name": "Encre Noire",
+      "price": 412,
+      "volume": 100,
+      "category": "intense",
+      "image": "assets/img/products/encre-noire.jpg",
+      "description": "Qara mürəkkəb kimi dərin və sirli. Sərv və vetiverin torpaq notları kaşmir ağacı ilə birləşərək güclü, minimalist bir iz buraxır.",
+      "notes": { "top": ["Sərv"], "heart": ["Vetiver"], "base": ["Kaşmir ağacı", "Müşk"] }
+    },
+    {
+      "id": 18,
+      "name": "Sauvage Dior",
+      "price": 288,
+      "volume": 100,
+      "category": "intense",
+      "image": "assets/img/products/sauvage.jpg",
+      "description": "Vəhşi və təravətli. Kalabriya berqamotu Siçuan istiotu ilə enerji qazanır, ambroksanın güclü izi ilə yadda qalır.",
+      "notes": { "top": ["Berqamot", "İstiot"], "heart": ["Lavanda", "Siçuan istiotu"], "base": ["Ambroksan", "Sidr"] }
+    },
+    {
+      "id": 19,
+      "name": "Goldea",
+      "price": 389,
+      "volume": 90,
+      "category": "intense",
+      "image": "assets/img/products/goldea.jpg",
+      "description": "Qızıl kimi parlaq və isti. Jasmin və pionun işıqlı ürəyi müşk və sandal ağacının dərinliyi ilə zərif bir axşam ətrinə çevrilir.",
+      "notes": { "top": ["Berqamot", "Çəhrayı istiot"], "heart": ["Jasmin", "Pion"], "base": ["Müşk", "Ənbər", "Sandal ağacı"] }
+    },
+    {
+      "id": 20,
+      "name": "Signorina",
+      "price": 245,
+      "volume": 100,
+      "category": "intense",
+      "image": "assets/img/products/signorina.jpg",
+      "description": "İtalyan zərifliyi. Qara qarağat və çəhrayı istiot qızılgüllə birləşir, paçuli və panna kotta notları ilə şirin bir son verir.",
+      "notes": { "top": ["Qara qarağat", "Çəhrayı istiot"], "heart": ["Qızılgül", "Jasmin"], "base": ["Paçuli", "Panna kotta"] }
+    },
+    {
+      "id": 21,
+      "name": "Dior Homme",
+      "price": 325,
+      "volume": 100,
+      "category": "floral",
+      "image": "assets/img/products/dior-homme.jpg",
+      "description": "Kişi üçün pudralı çiçək ətri. Lavanda və süsən kakao ilə birləşərək zərif, lakin güclü bir xarakter yaradır.",
+      "notes": { "top": ["Lavanda", "Berqamot"], "heart": ["Süsən", "Kakao"], "base": ["Dəri", "Vetiver"] }
+    },
+    {
+      "id": 22,
+      "name": "Majestic Rose",
+      "price": 425,
+      "volume": 100,
+      "category": "floral",
+      "image": "assets/img/products/majestic-rose.jpg",
+      "description": "Qızılgülə həsr olunmuş təntənəli ətir. Saf qızılgül ürəyi berqamotla açılır, müşk və ənbərlə uzun müddət qalır.",
+      "notes": { "top": ["Berqamot"], "heart": ["Qızılgül"], "base": ["Müşk", "Ənbər"] }
+    },
+    {
+      "id": 23,
+      "name": "Amethyst",
+      "price": 299,
+      "volume": 100,
+      "category": "floral",
+      "image": "assets/img/products/amethyst.jpg",
+      "description": "Qiymətli daş kimi parlayan ətir. Böyürtkən və qara qarağatın meyvəli notları qızılgül və pionla birləşərək incə bir buket yaradır.",
+      "notes": { "top": ["Böyürtkən", "Qara qarağat"], "heart": ["Qızılgül", "Pion"], "base": ["Müşk", "Ağ ağaclar"] }
+    },
+    {
+      "id": 24,
+      "name": "Black Opium",
+      "price": 379,
+      "volume": 90,
+      "category": "floral",
+      "image": "assets/img/products/black-opium.jpg",
+      "description": "Gecənin enerjisi. Qara qəhvənin cəsarəti ağ çiçəklər və vanil ilə birləşərək asılılıq yaradan, şirin bir ətir yaradır.",
+      "notes": { "top": ["Armud", "Çəhrayı istiot"], "heart": ["Qəhvə", "Jasmin"], "base": ["Vanil", "Paçuli", "Sidr"] }
+    }
+  ]
+}

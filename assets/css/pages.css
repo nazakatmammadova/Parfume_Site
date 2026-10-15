@@ -1,0 +1,689 @@
+/* ==========================================================================
+   Pages — sections that belong to a single page
+   ========================================================================== */
+
+/* =========================== HOME =========================== */
+
+/* ---------- Hero carousel ---------- */
+
+.hero {
+  background: var(--color-bg-soft);
+}
+
+.hero__slide {
+  position: relative;
+  height: clamp(460px, 72vh, 680px);
+}
+
+.hero__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--focus, center);
+}
+
+.hero__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero__slide--right .hero__inner {
+  justify-content: flex-end;
+}
+
+.hero__slide--center .hero__inner {
+  justify-content: center;
+  text-align: center;
+}
+
+.hero__content {
+  max-width: 500px;
+}
+
+.hero__title {
+  margin-bottom: 1rem;
+  font-size: clamp(2.3rem, 5.5vw, 4.25rem);
+  font-weight: 700;
+}
+
+.hero__text {
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  color: var(--color-text);
+}
+
+.hero__text strong {
+  color: var(--color-primary-dark);
+}
+
+/* Content animates in each time its slide becomes active */
+.hero .carousel-item .hero__content > * {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.hero .carousel-item.active .hero__content > * {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+
+.hero .carousel-item.active .hero__content > :nth-child(2) { transition-delay: 0.12s; }
+.hero .carousel-item.active .hero__content > :nth-child(3) { transition-delay: 0.24s; }
+.hero .carousel-item.active .hero__content > :nth-child(4) { transition-delay: 0.36s; }
+
+/* Indicators double as an autoplay progress bar.
+   Keep the animation duration in sync with data-bs-interval in index.html. */
+.hero .carousel-indicators {
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .carousel-indicators [data-bs-target] {
+  position: relative;
+  width: 40px;
+  height: 2px;
+  margin: 0;
+  border-radius: 0;
+  background-color: rgba(29, 33, 71, 0.2);
+  opacity: 1;
+  overflow: hidden;
+  transition: width 0.4s var(--ease);
+}
+
+.hero .carousel-indicators .active {
+  width: 64px;
+}
+
+.hero .carousel-indicators .active::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  transform-origin: left;
+  animation: hero-progress 5s linear forwards;
+}
+
+@keyframes hero-progress {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* Minimal arrows: thin chevron in a soft glass circle, fully shown on hover */
+.hero .carousel-control-prev,
+.hero .carousel-control-next {
+  width: 88px;
+  opacity: 0.55;
+  transition: opacity 0.4s var(--ease);
+}
+
+.hero:hover .carousel-control-prev,
+.hero:hover .carousel-control-next,
+.hero .carousel-control-prev:focus-visible,
+.hero .carousel-control-next:focus-visible {
+  opacity: 1;
+}
+
+.hero__arrow {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(29, 33, 71, 0.15);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--color-ink);
+  transition: background-color 0.3s, border-color 0.3s, transform 0.4s var(--ease);
+}
+
+.hero__arrow svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero .carousel-control-prev:hover .hero__arrow,
+.hero .carousel-control-next:hover .hero__arrow {
+  background: #fff;
+  border-color: #fff;
+}
+
+.hero .carousel-control-prev:hover .hero__arrow { transform: translateX(-3px); }
+.hero .carousel-control-next:hover .hero__arrow { transform: translateX(3px); }
+
+@media (max-width: 767.98px) {
+  .hero__slide {
+    height: 560px;
+  }
+
+  .hero__inner,
+  .hero__slide--right .hero__inner {
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 3.5rem;
+    text-align: center;
+  }
+
+  .hero__content {
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(8px);
+  }
+
+  .hero__text {
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .hero .carousel-control-prev,
+  .hero .carousel-control-next {
+    display: none;
+  }
+}
+
+/* ---------- Feature strip ---------- */
+
+.features {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1.75rem;
+}
+
+.feature i {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-size: 1.35rem;
+}
+
+.feature h3 {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+/* ---------- About preview ---------- */
+
+.about-preview .zoom {
+  aspect-ratio: 4 / 3;
+}
+
+/* ---------- Promo banner ---------- */
+
+.promo {
+  display: grid;
+  place-items: center;
+  min-height: 320px;
+  padding: 3rem 1.5rem;
+  border-radius: var(--radius-lg);
+  background: #f4f2f3 url("../img/banners/new-collection.jpg") center / cover no-repeat;
+  text-align: center;
+}
+
+.promo h2 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+.promo__price {
+  margin: 0.75rem 0 1.5rem;
+}
+
+.promo__price strong {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-navy);
+}
+
+@media (max-width: 767.98px) {
+  .promo {
+    background-position: 20% center;
+  }
+
+  .promo > div {
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* ---------- Image band with quote ---------- */
+
+.quote-band {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 420px;
+  padding: 4rem 1.5rem;
+  background: url("../img/banners/bottles.jpg") center / cover no-repeat;
+  text-align: center;
+  color: #fff;
+  isolation: isolate;
+}
+
+.quote-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(29, 33, 71, 0.55);
+}
+
+.quote-band blockquote {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-style: italic;
+  line-height: 1.35;
+}
+
+/* Parallax only where it works smoothly (desktop) */
+@media (hover: hover) and (min-width: 992px) {
+  .quote-band,
+  .stats {
+    background-attachment: fixed;
+  }
+}
+
+/* ---------- Contact ---------- */
+
+.contact {
+  background: var(--color-ink) url("../img/banners/flatlay-dark.jpg") center / cover no-repeat;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.contact-card {
+  height: 100%;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+}
+
+.contact-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+
+.contact-list li + li {
+  margin-top: 1rem;
+}
+
+.contact-list i {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.contact-list a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  color: #fff;
+}
+
+/* =========================== ABOUT =========================== */
+
+.about-images {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-images .zoom {
+  aspect-ratio: 16 / 9;
+}
+
+.about-text p {
+  color: var(--color-text);
+}
+
+.highlight {
+  margin: 1.5rem 0;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  border-left: 4px solid var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--color-ink);
+}
+
+/* ---------- Stats counter ---------- */
+
+.stats {
+  position: relative;
+  padding-block: clamp(4rem, 9vw, 6.5rem);
+  background: var(--color-ink) url("../img/banners/stats.jpg") center / cover no-repeat;
+  color: #fff;
+  isolation: isolate;
+}
+
+.stats::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(29, 33, 71, 0.6);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat__number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 7vw, 4rem);
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+.stat__number::after {
+  content: "+";
+  color: var(--color-primary);
+}
+
+.stat__label {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- Value cards ---------- */
+
+.value-card {
+  height: 100%;
+  padding: 2rem 1.75rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: #fff;
+  transition: box-shadow 0.4s var(--ease), transform 0.4s var(--ease);
+}
+
+.value-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-4px);
+}
+
+.value-card i {
+  display: inline-grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.value-card h3 {
+  font-size: 1.25rem;
+}
+
+.value-card p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+/* =========================== BLOG =========================== */
+
+.story + .story {
+  margin-top: clamp(3rem, 7vw, 5rem);
+}
+
+.story .zoom {
+  aspect-ratio: 3 / 2;
+}
+
+.story__date {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.story h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.story p {
+  margin-bottom: 1.5rem;
+}
+
+.gallery .zoom {
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+}
+
+/* =========================== PRODUCT DETAIL =========================== */
+
+.product-detail {
+  padding-block: 1.5rem var(--section-space);
+}
+
+.product-detail__crumbs {
+  margin-bottom: 1.75rem;
+  font-size: 0.85rem;
+  --bs-breadcrumb-divider-color: var(--color-muted);
+  --bs-breadcrumb-item-active-color: var(--color-ink);
+}
+
+.product-detail__crumbs a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.product-detail__crumbs a:hover {
+  color: var(--color-primary);
+}
+
+.product-detail__media {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: #f3eef0;
+}
+
+.product-detail__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-detail__info .eyebrow {
+  text-decoration: none;
+}
+
+.product-detail__title {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2.2rem, 4.5vw, 3.25rem);
+}
+
+.product-detail__price {
+  margin-bottom: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.product-detail__price span {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.product-detail__desc {
+  margin-bottom: 2rem;
+  font-size: 1.02rem;
+}
+
+/* Fragrance notes */
+.notes {
+  padding-block: 1.5rem;
+  border-block: 1px solid var(--color-line);
+}
+
+.notes__title {
+  margin-bottom: 1.1rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.notes__list {
+  margin: 0;
+}
+
+.notes__row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.notes__row + .notes__row {
+  margin-top: 0.9rem;
+}
+
+.notes__row dt {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
+.notes__row dd {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+}
+
+.note-chip {
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Buy row */
+.product-detail__buy {
+  display: flex;
+  gap: 0.75rem;
+  margin: 2rem 0 1.75rem;
+}
+
+.qty--lg {
+  height: 54px;
+  margin-top: 0;
+  padding-inline: 0.3rem;
+}
+
+.qty--lg button {
+  width: 42px;
+  height: 42px;
+}
+
+.qty--lg span {
+  min-width: 36px;
+  font-size: 1rem;
+}
+
+.product-detail__buy .btn {
+  --bs-btn-padding-y: 1rem;
+}
+
+.product-detail__perks {
+  display: grid;
+  gap: 0.65rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.product-detail__perks li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.product-detail__perks i {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+}
+
+@media (min-width: 992px) {
+  .product-detail__media {
+    position: sticky;
+    top: calc(var(--header-height) + 1.5rem);
+  }
+
+  .product-detail__info {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .product-detail__media {
+    aspect-ratio: 1;
+  }
+
+  .notes__row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

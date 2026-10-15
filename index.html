@@ -1,266 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
-    <link rel="stylesheet" href="./css/parfume.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Royal Parfume — orijinal kişi və qadın ətirləri. 20 illik təcrübə, sərfəli qiymətlər.">
+  <title>Royal Parfume — Orijinal ətirlər</title>
+  <link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/base.css" rel="stylesheet">
+  <link href="assets/css/layout.css" rel="stylesheet">
+  <link href="assets/css/components.css" rel="stylesheet">
+  <link href="assets/css/pages.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/js/pages/home.js" type="module"></script>
 </head>
-<body>
-  <div class="daire"></div>
-    <header id="myNavbar">
-        <nav class="navbar navbar-light bg-transparent myy">
-            <div class="container">
-              <a class="navbar-brand w-25"><img class="w-50" src="./img/logo3.png"></a>
-              <form class="d-flex ss1 w-50">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
-              </form>
-              <div class="icons">
-                <i class="bi bi-person-circle"></i>
-                <i id="btnbasket" class="bi bi-cart">(<span>0</span>)</i>
-               </div>
-            </div>
-          </nav>
-          <nav class="navbar navbar-dark navbar-expand-lg bg-primary my">
-            <div class="container-fluid">
-              <button class="mx-3 navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body justify-content-center py-2" id="mynavbar">
-                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link fs-5" aria-current="page" href="#">Ana Səhifə</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link fs-5" href="about.html">Haqqımızda</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link fs-5" href="bloq.html">Bloqlar</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link fs-5" href="kateqori.html">Kateqoriyalar</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link fs-5" href="#elaqe">Əlaqə</a>
-                    </li>
-                  </ul>
-                  <form class="d-flex ss py-3">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </nav>   
-          <!-- <nav class="navbar navbar-expand-sm navbar-dark bg-primary my">
-            <div class="container">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center py-2" id="mynavbar">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link fs-5" href="#">Ana Səhifə</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-5" href="about.html">Haqqımızda</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-5" href="bloq.html">Bloqlar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-5" href="kateqori.html">Kateqoriyalar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fs-5" href="#elaqe">Əlaqə</a>
-                  </li>
-                </ul>
-                <form class="d-flex ss">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary" type="submit">Search</button>
-                  </form>
-              </div>
-            </div>
-          </nav> -->
-          <section id="basket">
-            <div class="content1">
-                <div class="modal1">
-                    <div class="modal-bas1">
-                        <h2>Basket</h2>
-                        <span><i class="bi bi-x"></i></span>
-                    </div>
-                    <div class="modal-body1">
-                        <table>
-                            <tbody>
-  <!-- <tr>
-    <td><img src="etir1.png"></td>
-    <td>Calvin Klein</td>
-    <td><p class="pt-3"><span class="btn" onclick="azalt()"><i class="bi bi-dash-lg"></i></span>1<span class="btn" onclick="artir()"><i class="bi bi-plus-lg"></i></span></p></td>
-    <td><span>300</span> $</td>
-    <td onclick="removerow()"><span class="dlt"><i class="bi bi-x"></i></span></td>
-  </tr> -->
-                            </tbody>
-                        </table>
-                        <p class="cem">Total: <span id="totalprice"></span></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-      <div id="demo" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./img/n1.jpg" class="d-block w-100">
-        <div class="sekiller yazi1 text-center">
-          <h1>Most Popular parfume</h1>
-          <h3>Use The Code “PERFUMOR40”</h3>
-          <button type="button" class="bg-dark text-light py-3 px-4">SHOP NOW</button>
-        </div>
+<body data-page="home">
+  <header id="site-header"></header>
+
+  <main>
+    <!-- Hero -->
+    <section id="heroCarousel" class="hero carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false" aria-label="Kampaniyalar">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slayd 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slayd 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slayd 3"></button>
       </div>
-      <div class="carousel-item">
-        <img src="./img/n2.jpg" class="d-block w-100">
-        <div class="sekiller yazi1 text-center">
-          <h1>Men parfume</h1>
-          <h3>The world's largest selection of</h3>
-          <button type="button" class="bg-dark text-light py-3 px-4">SHOP NOW</button>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./img/n3.jpg" class="d-block w-100">
-        <div class="sekiller yazi2 text-center">
-          <h1>Women parfume</h1>
-          <h3>Discount Parfume up to 80% off</h3>
-          <button type="button" class="bg-dark text-light py-3 px-4">SHOP NOW</button>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-      </div>
-      <section id="about" class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="./img/about.jpg" class="w-100" >
-            </div>
-            <div class="col-md-5 mx-5">
-              <h2>Haqqımızda</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Veniam iusto culpa modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, tempore! Sapiente eum, iure assumenda vero, harum mollitia perferendis dolor praesentium impedit suscipit ratione similique dignissimos ullam nostrum? Saepe, quod? Enim.</p>
-              <a href="about.html">Davam...</a>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active hero__slide hero__slide--right" data-bs-interval="5000">
+          <img class="hero__img" src="assets/img/hero/hero-1.jpg" alt="" style="--focus: 30% center" width="1920" height="1000" fetchpriority="high">
+          <div class="container hero__inner">
+            <div class="hero__content">
+              <span class="eyebrow">Ən çox sevilənlər</span>
+              <h1 class="hero__title">Populyar ətirlər</h1>
+              <p class="hero__text"><strong>PERFUMOR40</strong> kodu ilə bütün sifarişlərə 40% endirim.</p>
+              <a class="btn btn-brand" href="categories.html?category=popular">İndi al</a>
             </div>
           </div>
         </div>
 
-      </section>
-      <section id="sebet" class="py-5">
-        <div class="text-center my-3 fs-1 ">Məhsullar</div>
-        <div class="container">
-          <div class="row etir">
-          
-          </div>
-        </div>
-          <div class="container">
-            <div class="row etir">
-             
-            </div>
-          </div> 
-      </section>
-
-      <section id="yeni" class="py-3 my-4">
-        <div class=" w-50 m-auto text-center mt-5 ">
-          <h2 class="fs-1">
-            Yeni Kolleksiya
-          </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <p>Price from: <span>$45.00</span></p>
-          <a href="#">Shop now</a>
-        </div>
-      </section>
-      <section class="elave py-2 mt-2">
-        <!-- <h2>LOrem</h2> -->
-      </section>
-      <section id="elaqe" class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 text-center mt-5 border-end border-3">
-              <h2>Takip et</h2>
-              <div>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-twitter"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-linkedin"></i>
-              </div>
-            </div>
-            <div class="col-md-6 text-center mt-5 border-ri">
-              <h2>Əlaqə</h2>
-              <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p class="text-light">example@domain.com</p>
+        <div class="carousel-item hero__slide hero__slide--right" data-bs-interval="5000">
+          <img class="hero__img" src="assets/img/hero/hero-2.jpg" alt="" style="--focus: 25% center" width="1920" height="1000" decoding="async">
+          <div class="container hero__inner">
+            <div class="hero__content">
+              <span class="eyebrow">Kişilər üçün</span>
+              <h2 class="hero__title">Kişi ətirləri</h2>
+              <p class="hero__text">Dünyanın ən geniş seçimi — klassikdən müasirə qədər.</p>
+              <a class="btn btn-brand" href="categories.html?category=men">Kolleksiyaya bax</a>
             </div>
           </div>
         </div>
-      </section>
 
-      <footer class="py-5 mt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <img class="w-50 rounded" src="./img/logo3.png">
-              <p class="mt-2">20 ilin təcrübəsi ilə xidmətinizdə olmaqdan qürur duyuruq!</p>
-              <p>Həyatınızın ən ətirli səhifəsi...</p>
+        <div class="carousel-item hero__slide hero__slide--right" data-bs-interval="5000">
+          <img class="hero__img" src="assets/img/hero/hero-3.jpg" alt="" style="--focus: 30% center" width="1920" height="1000" decoding="async">
+          <div class="container hero__inner">
+            <div class="hero__content">
+              <span class="eyebrow">Xanımlar üçün</span>
+              <h2 class="hero__title">Qadın ətirləri</h2>
+              <p class="hero__text">Seçilmiş ətirlərdə <strong>80%-ə qədər</strong> endirim.</p>
+              <a class="btn btn-brand" href="categories.html?category=women">Kolleksiyaya bax</a>
             </div>
-            <div class="col-md-3 ">
-              <h3>Kateqoriyalar</h3>
-              <ul>
-                <li>Qadın ətirləri</li>
-                <li>Kişi ətirləri</li>
-                <li>Ekskluziv ətirlər</li>
-                <li>Tester</li>
-                <li>Yeni</li>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="hero__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></span>
+        <span class="visually-hidden">Əvvəlki</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="hero__arrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span>
+        <span class="visually-hidden">Növbəti</span>
+      </button>
+    </section>
+
+    <!-- Features -->
+    <section class="features" aria-label="Üstünlüklərimiz">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-lg-3">
+            <div class="feature">
+              <i class="bi bi-patch-check"></i>
+              <div><h3>100% orijinal</h3><p>Sertifikatlı məhsullar</p></div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="feature">
+              <i class="bi bi-truck"></i>
+              <div><h3>Pulsuz çatdırılma</h3><p>Bakı daxili 24 saat</p></div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="feature">
+              <i class="bi bi-gift"></i>
+              <div><h3>Hədiyyə qablaşdırma</h3><p>Hər sifarişə pulsuz</p></div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="feature">
+              <i class="bi bi-headset"></i>
+              <div><h3>Peşəkar məsləhət</h3><p>Həftədə 6 gün</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About preview -->
+    <section class="section about-preview">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-md-6" data-reveal>
+            <div class="zoom">
+              <img src="assets/img/about/magnolia.jpg" alt="Ağ maqnoliya çiçəyi və ətir şüşəsi" width="1000" height="450" loading="lazy">
+            </div>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <span class="eyebrow">Haqqımızda</span>
+            <h2 class="section-title">Hər ətrin öz hekayəsi var</h2>
+            <p>Royal Parfume 20 ildir ki, dünyanın aparıcı brendlərinin orijinal ətirlərini Azərbaycana gətirir. Biz sizə sadəcə ətir deyil, xatirələrdə qalan bir imza seçməyə kömək edirik.</p>
+            <p class="mb-4">Hər məhsulumuz sertifikatlıdır, məsləhətçilərimiz isə zövqünüzə ən uyğun notları tapmağa hər zaman hazırdır.</p>
+            <a class="link-arrow" href="about.html">Ətraflı oxu <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="section section--soft" id="products">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Mağaza</span>
+          <h2 class="section-title">Seçilmiş məhsullar</h2>
+          <p>Müştərilərimizin ən çox seçdiyi ətirlər</p>
+        </div>
+        <div class="row product-grid" id="featured-products"></div>
+        <div class="text-center mt-5">
+          <a class="btn btn-outline-brand" href="categories.html">Bütün məhsullar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- New collection promo -->
+    <section class="section">
+      <div class="container">
+        <div class="promo" data-reveal>
+          <div>
+            <span class="eyebrow">2026</span>
+            <h2>Yeni kolleksiya</h2>
+            <p class="mb-0">Bu mövsümün ən təravətli notları artıq mağazamızda.</p>
+            <p class="promo__price">Qiymət: <strong>$45.00</strong>-dan</p>
+            <a class="btn btn-brand" href="categories.html">Kolleksiyaya bax</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote band -->
+    <section class="quote-band">
+      <div data-reveal>
+        <blockquote>“Ətir — görünməyən, lakin unudulmayan ən gözəl aksessuardır.”</blockquote>
+        <a class="btn btn-light-brand" href="blog.html">Bloqumuzu oxu</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Əlaqə</span>
+          <h2 class="section-title">Bizimlə əlaqə saxlayın</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6" data-reveal>
+            <div class="contact-card">
+              <h3 class="h5 text-white mb-4">Məlumat</h3>
+              <ul class="contact-list">
+                <li><i class="bi bi-geo-alt"></i><span>Bakı şəhəri, Nizami küçəsi 10</span></li>
+                <li><i class="bi bi-telephone"></i><a href="tel:+994501234567">+994 50 123 45 67</a></li>
+                <li><i class="bi bi-envelope"></i><a href="mailto:info@royalparfume.az">info@royalparfume.az</a></li>
+                <li><i class="bi bi-clock"></i><span>B.e. – Şənbə, 09:00 – 19:00</span></li>
               </ul>
             </div>
-            <div class="col-md-3 ">
-              <h3>Brendlər</h3>
-              <ul>
-                <li>Versace</li>
-                <li>Calvin Klein</li>
-                <li>Poison</li>
-                <li>Chanel</li>
-                <li>Pure XS</li>
-              </ul>
-            </div>
-            <div class="col-md-3 ">
-              <h3>Məlumat</h3>
-              <p>İş qrafiki:</p>
-              <p>9:00-dan 19:00-dək həftənin altı günü. Bazar günü iş günü deyil.</p>
+          </div>
+          <div class="col-md-6" data-reveal>
+            <div class="contact-card">
+              <h3 class="h5 text-white mb-3">Bizi izləyin</h3>
+              <p class="mb-4">Yeni kolleksiyalar, endirimlər və ətir məsləhətləri üçün sosial şəbəkələrdə bizi izləyin.</p>
+              <div data-social-links></div>
             </div>
           </div>
-          <p class="text-center mt-4">© 2022 <span>«Royal Parfume»</span>. Bütün hüquqlar qorunur.</p>
         </div>
-      </footer>
-    
-       
+      </div>
+    </section>
+  </main>
 
-
-
-    <script src="./js/parfume.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <footer id="site-footer"></footer>
 </body>
 </html>
