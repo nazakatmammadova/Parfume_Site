@@ -3,6 +3,7 @@
 
 import { $ } from "../core/utils.js";
 import { getCartCount, onCartChange } from "../core/cart.js";
+import { logoHtml } from "./logo.js";
 
 const NAV_LINKS = [
   { page: "home", href: "index.html", label: "Ana Səhifə" },
@@ -28,9 +29,7 @@ const template = (currentPage) => `
         <i class="bi bi-list"></i>
       </button>
 
-      <a class="navbar-brand site-logo" href="index.html">
-        <img src="assets/img/brand/logo.png" alt="Royal Parfume" width="499" height="246">
-      </a>
+      ${logoHtml("navbar-brand")}
 
       <div class="offcanvas offcanvas-start site-nav" tabindex="-1" id="siteNav" aria-labelledby="siteNavLabel">
         <div class="offcanvas-header">

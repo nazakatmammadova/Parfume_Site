@@ -1,5 +1,6 @@
 import { $ } from "../core/utils.js";
 import { categories, brands } from "../data/products.js";
+import { logoHtml } from "./logo.js";
 
 const SOCIAL_LINKS = [
   { icon: "instagram", label: "Instagram", href: "https://instagram.com/" },
@@ -20,9 +21,7 @@ const template = () => `
   <div class="container">
     <div class="row g-4 g-lg-5">
       <div class="col-lg-4 col-md-6">
-        <a class="footer-logo" href="index.html">
-          <img src="assets/img/brand/logo.png" alt="Royal Parfume" width="499" height="246" loading="lazy">
-        </a>
+        ${logoHtml("logo--light mb-4")}
         <p>20 illik təcrübə ilə xidmətinizdə olmaqdan qürur duyuruq. Həyatınızın ən ətirli səhifəsi buradan başlayır.</p>
         ${socialLinksHtml()}
       </div>

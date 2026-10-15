@@ -30,14 +30,57 @@
   gap: 1rem;
 }
 
-.site-logo {
+/* ---------- Logo ---------- */
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
-.site-logo img {
-  width: auto;
-  height: 52px;
+.logo__mark {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  transition: transform 0.5s var(--ease);
+}
+
+.logo:hover .logo__mark {
+  transform: rotate(-8deg);
+}
+
+.logo__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo__name {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+}
+
+.logo__tag {
+  margin-top: 0.3rem;
+  padding-left: 0.1rem;
+  font-family: var(--font-body);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+/* White version for dark backgrounds (footer) */
+.logo--light .logo__name {
+  color: #fff;
 }
 
 .icon-btn {
@@ -142,8 +185,13 @@
     --header-height: 64px;
   }
 
-  .site-logo img {
-    height: 42px;
+  .logo__mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo__name {
+    font-size: 1.4rem;
   }
 
   .site-nav {
@@ -258,19 +306,6 @@
   background: var(--color-ink);
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.9rem;
-}
-
-.site-footer .footer-logo {
-  display: inline-block;
-  padding: 0.6rem 1rem;
-  margin-bottom: 1.25rem;
-  border-radius: var(--radius-sm);
-  background: #fff;
-}
-
-.site-footer .footer-logo img {
-  height: 44px;
-  width: auto;
 }
 
 .site-footer h3 {
